@@ -8,8 +8,11 @@
  
   <action name="showProduct" class="com.how2java.action.ProductAction" method="show">
     <result name="showJsp">show.jsp</result>
-  </action>    
- 
-</package>
+  </action>
+  <action name="addProduct" class="com.how2java.action.ProductAction" method="add">
+    <result name="showJsp">show.jsp</result>
+  </action>
+
+  </package>
  
 </struts>
