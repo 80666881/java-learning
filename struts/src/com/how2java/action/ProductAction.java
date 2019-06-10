@@ -8,7 +8,7 @@ public class ProductAction {
 	public String show() {
 		product = new Product();
 		product.setName("iphone7");
-		return "show";
+		return "showJsp";
 	}
 
 	public Product getProduct() {
