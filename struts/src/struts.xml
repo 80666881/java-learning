@@ -8,9 +8,13 @@
   <constant name="struts.multipart.maxSize" value="10240000"/>
 
   <package name="basicstruts" extends="struts-default">
-
+    <interceptors>
+      <interceptor name="dateInterceptor" class="com.how2java.interceptor.DateInterceptor" />
+    </interceptors>
 <!--    整合action,{1}表示第一个通配符,就是*  -->
   <action name="*Product" class="com.how2java.action.ProductAction" method="{1}">
+    <interceptor-ref name="dateInterceptor" />
+    <interceptor-ref name="defaultStack" />
     <result name="list">list.jsp</result>
     <result name="showJsp">show.jsp</result>
   </action>

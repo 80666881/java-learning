@@ -2,7 +2,7 @@ package com.how2java.action;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,7 +14,15 @@ import com.opensymphony.xwork2.ActionContext;
 public class ProductAction {
 	private Product product;
 	private List<Product> products;
+	private Date date;
 
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 	public List<Product> getProducts() {
 		return products;
 	}

@@ -2,7 +2,7 @@
          pageEncoding="UTF-8" isELIgnored="false"%>
 
 <%@ taglib prefix="s" uri="/struts-tags"%>
-
+${date}
 <style>
     table {
         border-collapse: collapse;
