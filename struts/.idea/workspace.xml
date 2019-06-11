@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e50b5c-f8ac-43c4-aec3-724f564465e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/how2java/interceptor/DateInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/addProduct.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
     </list>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="371">
+              <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -42,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/how2java/interceptor/DateInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="364">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,9 +80,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/how2java/action/ProductAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="331">
+              <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
               <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
                 <element signature="e#459#460#0" expanded="true" />
                 <element signature="e#477#478#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
@@ -132,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="260">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -167,11 +171,11 @@
         <option value="$PROJECT_DIR$/WebContent/upload.jsp" />
         <option value="$PROJECT_DIR$/src/com/how2java/action/UploadAction.java" />
         <option value="$PROJECT_DIR$/WebContent/success.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/addProduct.jsp" />
-        <option value="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" />
         <option value="$PROJECT_DIR$/WebContent/list.jsp" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/src/com/how2java/interceptor/DateInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/WebContent/addProduct.jsp" />
       </list>
     </option>
   </component>
@@ -369,12 +373,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560161619973</updated>
       <workItem from="1560161621603" duration="1636000" />
-      <workItem from="1560216688962" duration="4351000" />
+      <workItem from="1560216688962" duration="4680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5987000" />
+    <option name="totallyTimeSpent" value="6316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -465,24 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -508,11 +498,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/how2java/interceptor/DateInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/how2java/action/ProductAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="331">
+          <caret line="79" column="41" lean-forward="true" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
             <element signature="e#477#478#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
@@ -527,13 +532,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/how2java/interceptor/DateInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="371">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

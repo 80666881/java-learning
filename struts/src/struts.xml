@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
-    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
-    "http://struts.apache.org/dtds/struts-2.0.dtd">
- 
-<struts>
-<!--  上传文件最大值，10m-->
-  <constant name="struts.multipart.maxSize" value="10240000"/>
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
 
-  <package name="basicstruts" extends="struts-default">
-    <interceptors>
-      <interceptor name="dateInterceptor" class="com.how2java.interceptor.DateInterceptor" />
-    </interceptors>
-<!--    整合action,{1}表示第一个通配符,就是*  -->
-  <action name="*Product" class="com.how2java.action.ProductAction" method="{1}">
-    <interceptor-ref name="dateInterceptor" />
-    <interceptor-ref name="defaultStack" />
-    <result name="list">list.jsp</result>
-    <result name="showJsp">show.jsp</result>
-  </action>
-  <action name="upload" class="com.how2java.action.UploadAction" method="upload">
-    <result name="success">success.jsp</result>
-  </action>
-  </package>
- 
+<struts>
+    <!--  上传文件最大值，10m-->
+    <constant name="struts.multipart.maxSize" value="10240000"/>
+
+    <package name="basicstruts" extends="struts-default">
+        <interceptors>
+            <interceptor name="dateInterceptor" class="com.how2java.interceptor.DateInterceptor"/>
+        </interceptors>
+        <!--    整合action,{1}表示第一个通配符,就是*  -->
+        <action name="*Product" class="com.how2java.action.ProductAction" method="{1}">
+            <interceptor-ref name="dateInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
+            <result name="list">list.jsp</result>
+            <result name="showJsp">show.jsp</result>
+        </action>
+        <action name="addPageProduct" class="com.how2java.action.ProductAction" method="addPage">
+            <result name="addPage" type="redirect">addProduct.jsp?name=${name}</result>
+        </action>
+        <action name="upload" class="com.how2java.action.UploadAction" method="upload">
+            <result name="success">success.jsp</result>
+        </action>
+    </package>
+
 </struts>

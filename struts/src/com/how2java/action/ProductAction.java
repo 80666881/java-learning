@@ -14,6 +14,16 @@ import com.opensymphony.xwork2.ActionContext;
 public class ProductAction {
 	private Product product;
 	private List<Product> products;
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	private Date date;
 
 	public Date getDate() {
@@ -70,5 +80,10 @@ public class ProductAction {
 		m.put("name", product.getName());
 		System.out.println("product.name:"+product.getName());
 		return "showJsp";
+	}
+
+	public String addPage(){
+		name = "default name";
+		return "addPage";
 	}
 }

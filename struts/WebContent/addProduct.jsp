@@ -1,23 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: zeller
-  Date: 2019-06-10
-  Time: 18:24
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false"%>
 
 <html>
+<form action="addProduct">
 
-<body>
-
-<s:form action="addProduct">
-
-    <s:textfield name="product.name" label="product name" />
-    <s:submit value="Submit" />
-
-</s:form>
-
-</body>
+    <input type="text" name="product.name" value="${param.name}">
+    <br/>
+    <input type="submit" value="submit">
+</form>
 </html>
