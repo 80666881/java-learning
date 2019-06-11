@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4e50b5c-f8ac-43c4-aec3-724f564465e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/WebContent/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e4e50b5c-f8ac-43c4-aec3-724f564465e1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -373,12 +369,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560161619973</updated>
       <workItem from="1560161621603" duration="1636000" />
-      <workItem from="1560216688962" duration="4680000" />
+      <workItem from="1560216688962" duration="4982000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6316000" />
+    <option name="totallyTimeSpent" value="6618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -392,7 +388,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31488934" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31488934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,7 +538,7 @@
     <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
