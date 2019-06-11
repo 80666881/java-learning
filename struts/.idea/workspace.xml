@@ -7,13 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e50b5c-f8ac-43c4-aec3-724f564465e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/struts_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/struts_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/struts_war_exploded/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/struts_war_exploded/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/struts/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/struts/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="368">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -167,8 +160,8 @@
         <option value="$PROJECT_DIR$/WebContent/success.jsp" />
         <option value="$PROJECT_DIR$/WebContent/addProduct.jsp" />
         <option value="$PROJECT_DIR$/src/com/how2java/action/ProductAction.java" />
-        <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/WebContent/list.jsp" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
       </list>
     </option>
   </component>
@@ -359,12 +352,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560161619973</updated>
       <workItem from="1560161621603" duration="1636000" />
-      <workItem from="1560216688962" duration="2917000" />
+      <workItem from="1560216688962" duration="3337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4553000" />
+    <option name="totallyTimeSpent" value="4973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -457,13 +450,6 @@
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -500,17 +486,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+    <entry file="file://$PROJECT_DIR$/WebContent/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="368">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/list.jsp">
+    <entry file="file://$PROJECT_DIR$/WebContent/addProduct.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="208">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
