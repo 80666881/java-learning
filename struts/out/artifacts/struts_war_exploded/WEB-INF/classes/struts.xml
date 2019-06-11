@@ -12,7 +12,9 @@
   <action name="addProduct" class="com.how2java.action.ProductAction" method="add">
     <result name="showJsp">show.jsp</result>
   </action>
-
+  <action name="upload" class="com.how2java.action.UploadAction" method="upload">
+    <result name="success">success.jsp</result>
+  </action>
   </package>
  
 </struts>
