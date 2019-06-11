@@ -12,6 +12,17 @@ public class TestHibernate {
 //        Session s = sf.openSession();
 //        s.beginTransaction();
 //
+
+//        s.getTransaction().commit();
+//        s.close();
+//        sf.close();
+
+        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+
+        Session s = sf.openSession();
+        s.beginTransaction();
+
+        //增
 //        for (int i = 0; i < 10; i++) {
 //            Product p = new Product();
 //            p.setName("iphone"+i);
@@ -19,21 +30,25 @@ public class TestHibernate {
 //            s.save(p);
 //        }
 //
-//        s.getTransaction().commit();
-//        s.close();
-//        sf.close();
-        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//        Product p =(Product) s.get(Product.class, 6);
+//        删
+//        s.delete(p);
 
-        Session s = sf.openSession();
-        s.beginTransaction();
-        Product p = new Product();
-        p.setName("p1");
-        System.out.println("此时p是瞬时状态");
-        s.save(p);
-        System.out.println("此时p是持久状态");
+        //改
+//        p.setName("iphone-modified");
+//        s.update(p);
+
+
+        //查get，非延迟，立即执行sql，拿不到返回null
+//        Product p =(Product) s.get(Product.class, 6);
+
+        //查load，延迟，返回属性才立即执行sql，拿不到返回null
+        Product p =(Product) s.load(Product.class, 6);
+
+        System.out.println("id=6的产品名称是: "+p.getName());
+
         s.getTransaction().commit();
         s.close();
-        System.out.println("此时p是脱管状态");
         sf.close();
     }
 
