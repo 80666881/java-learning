@@ -12,10 +12,8 @@ public class TestHibernate {
     public static void main(String[] args) {
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         /*
-        *   使用Criteria 查询数据
-                1. 通过session的createCriteria创建一个Criteria 对象
-                2. Criteria.add 增加约束。 在本例中增加一个对name的模糊查询(like)
-                3. 调用list()方法返回查询结果的集合
+        *   通过标准SQL语句进行查询
+            Hibernate依然保留了对标准SQL语句的支持，在一些场合，比如多表联合查询，并且有分组统计函数的情况下，标准SQL语句依然是效率较高的一种选择
         *
         * */
         Session s = sf.openSession();
@@ -27,11 +25,21 @@ public class TestHibernate {
 //        for (Product p : ps) {
 //            System.out.println(p.getName());
 //        }
-        Criteria c= s.createCriteria(Product.class);
-        c.add(Restrictions.like("name", "%"+name+"%"));
-        List<Product> ps = c.list();
-        for (Product p : ps) {
-            System.out.println(p.getName());
+//        Criteria c= s.createCriteria(Product.class);
+//        c.add(Restrictions.like("name", "%"+name+"%"));
+//        List<Product> ps = c.list();
+//        for (Product p : ps) {
+//            System.out.println(p.getName());
+//        }
+        String sql = "select * from product_ p where p.name like '%"+name+"%'";
+
+        Query q= s.createSQLQuery(sql);
+        List<Object[]> list= q.list();
+        for (Object[] os : list) {
+            for (Object filed: os) {
+                System.out.print(filed+"\t");
+            }
+            System.out.println();
         }
 
         s.getTransaction().commit();
