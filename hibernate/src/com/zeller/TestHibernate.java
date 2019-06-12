@@ -1,5 +1,6 @@
 package com.zeller;
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.Query;
 import org.hibernate.Criteria;
@@ -12,34 +13,25 @@ public class TestHibernate {
     public static void main(String[] args) {
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         /*
-        *   通过标准SQL语句进行查询
-            Hibernate依然保留了对标准SQL语句的支持，在一些场合，比如多表联合查询，并且有分组统计函数的情况下，标准SQL语句依然是效率较高的一种选择
+        *  hibernate多对一
         *
         * */
         Session s = sf.openSession();
         s.beginTransaction();
-        String name = "iphone";
-//        Query q =s.createQuery("from Product p where p.name like ?");
-//        q.setString(0, "%"+name+"%");
-//        List<Product> ps= q.list();
-//        for (Product p : ps) {
-//            System.out.println(p.getName());
-//        }
-//        Criteria c= s.createCriteria(Product.class);
-//        c.add(Restrictions.like("name", "%"+name+"%"));
-//        List<Product> ps = c.list();
-//        for (Product p : ps) {
-//            System.out.println(p.getName());
-//        }
-        String sql = "select * from product_ p where p.name like '%"+name+"%'";
 
-        Query q= s.createSQLQuery(sql);
-        List<Object[]> list= q.list();
-        for (Object[] os : list) {
-            for (Object filed: os) {
-                System.out.print(filed+"\t");
-            }
-            System.out.println();
+//        Category c =new Category();
+//        //cid=2
+//        c.setName("c2");
+//        s.save(c);
+//        Product p = (Product) s.get(Product.class, 8);
+//        p.setCategory(c);
+//        s.update(p);
+
+        //一对多
+        Category c = (Category) s.get(Category.class, 2);
+        Set<Product> ps = c.getProducts();
+        for (Product p : ps) {
+            System.out.println(p.getName());
         }
 
         s.getTransaction().commit();
