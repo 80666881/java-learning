@@ -18,6 +18,7 @@
         <property name="hbm2ddl.auto">update</property>
         <mapping resource="com/zeller/Product.hbm.xml" />
         <mapping resource="com/zeller/Category.hbm.xml" />
+        <mapping resource="com/zeller/User.hbm.xml" />
     </session-factory>
 
 </hibernate-configuration>

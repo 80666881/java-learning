@@ -1,4 +1,5 @@
 package com.zeller;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -27,16 +28,32 @@ public class TestHibernate {
 //        p.setCategory(c);
 //        s.update(p);
 
-        //一对多
-        Category c = (Category) s.get(Category.class, 2);
-        Set<Product> ps = c.getProducts();
-        for (Product p : ps) {
-            System.out.println(p.getName());
+//        //一对多
+//        Category c = (Category) s.get(Category.class, 2);
+//        Set<Product> ps = c.getProducts();
+//        for (Product p : ps) {
+//            System.out.println(p.getName());
+//        }
+
+        //多对多
+        //增加3个用户
+        Set<User> users = new HashSet();
+        for (int i = 0; i < 3; i++) {
+            User u =new User();
+            u.setName("user"+i);
+            users.add(u);
+            s.save(u);
         }
 
+        //产品1被用户1,2,3购买
+        Product p1 = (Product) s.get(Product.class, 1);
+
+        p1.setUsers(users);
+        s.save(p1);
         s.getTransaction().commit();
         s.close();
         sf.close();
+
     }
 
 }
