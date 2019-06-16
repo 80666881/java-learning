@@ -13,43 +13,16 @@ import org.hibernate.cfg.Configuration;
 public class TestHibernate {
     public static void main(String[] args) {
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
-        /*
-        *  hibernate多对一
-        *
-        * */
         Session s = sf.openSession();
         s.beginTransaction();
-
-//        Category c =new Category();
-//        //cid=2
-//        c.setName("c2");
-//        s.save(c);
-//        Product p = (Product) s.get(Product.class, 8);
-//        p.setCategory(c);
-//        s.update(p);
-
-//        //一对多
-//        Category c = (Category) s.get(Category.class, 2);
-//        Set<Product> ps = c.getProducts();
-//        for (Product p : ps) {
-//            System.out.println(p.getName());
-//        }
-
-        //多对多
-        //增加3个用户
-        Set<User> users = new HashSet();
-        for (int i = 0; i < 3; i++) {
-            User u =new User();
-            u.setName("user"+i);
-            users.add(u);
-            s.save(u);
-        }
-
-        //产品1被用户1,2,3购买
-        Product p1 = (Product) s.get(Product.class, 1);
-
-        p1.setUsers(users);
-        s.save(p1);
+        /*
+        * 属性延迟加载
+        * 在打印log1之前，是不会打印出sql语句的，只有在访问属性“getName()"的时候，才会访问数据库
+        * */
+        Product p = (Product)s.load(Product.class, 1);
+        System.out.println("log1");
+        System.out.println(p.getName());
+        System.out.println("log2");
         s.getTransaction().commit();
         s.close();
         sf.close();

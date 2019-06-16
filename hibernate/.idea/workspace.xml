@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86ab44b3-b3a9-4b49-9bb3-c02db703ba10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/com/zeller/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/com/zeller/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/com/zeller/Product.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/com/zeller/Product.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/com/zeller/TestHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/com/zeller/TestHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hibernate/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zeller/Product.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zeller/Product.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zeller/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zeller/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zeller/TestHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zeller/TestHibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zeller/TestHibernate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+            <state relative-caret-position="510">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -266,12 +257,12 @@
       <updated>1559970980567</updated>
       <workItem from="1559970981961" duration="1475000" />
       <workItem from="1560222881115" duration="7488000" />
-      <workItem from="1560643705282" duration="303000" />
+      <workItem from="1560643705282" duration="505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9266000" />
+    <option name="totallyTimeSpent" value="9468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-215" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -379,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zeller/TestHibernate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+        <state relative-caret-position="510">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
