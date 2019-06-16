@@ -12,17 +12,22 @@ import org.hibernate.cfg.Configuration;
 
 public class TestHibernate {
     public static void main(String[] args) {
+        /*
+        * 关系延迟加载
+        * 延迟加载又叫lazyload，在one-many many-many的时候都可以使用关系的延迟加载
+        * 1.修改配置文件 Category.hbm.xml
+        * 2.执行25行的时候，只会查询Category表的信息，不会查询product_表
+            只有在执行28行，通过category取products的时候，才会进行对product_表的查询
+        * */
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         Session s = sf.openSession();
         s.beginTransaction();
-        /*
-        * 属性延迟加载
-        * 在打印log1之前，是不会打印出sql语句的，只有在访问属性“getName()"的时候，才会访问数据库
-        * */
-        Product p = (Product)s.load(Product.class, 1);
+        Category c = (Category) s.get(Category.class, 1);
+
         System.out.println("log1");
-        System.out.println(p.getName());
+        System.out.println(c.getProducts());
         System.out.println("log2");
+
         s.getTransaction().commit();
         s.close();
         sf.close();
