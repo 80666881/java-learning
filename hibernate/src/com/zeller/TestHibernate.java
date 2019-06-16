@@ -12,32 +12,27 @@ import org.hibernate.cfg.Configuration;
 
 public class TestHibernate {
     public static void main(String[] args) {
+
         /*
-        * 什么是级联？ 简单的说，没有配置级联的时候，删除分类，其对应的产品不会被删除。
-        * 但是如果配置了恰当的级联，那么删除分类的时候，其对应的产品都会被删除掉。
+        * hibernate一级缓存
+        * hibernate默认是开启一级缓存的，一级缓存存放在session上
         *
-        *   包括上一步说的删除用得级联，级联有4种类型：
-                all：所有操作都执行级联操作；
-                none：所有操作都不执行级联操作；
-                delete：删除时执行级联操作；
-                save-update：保存和更新时执行级联操作；
-            级联通常用在one-many和many-to-many上，几乎不用在many-one上。
         * */
+
+
+        /*
+        * 第一次通过id=1获取对象的时候，session中是没有对应缓存对象的，所以会在"log1"后出现sql查询语句。
+          第二次通过id=1获取对象的时候，session中有对应的缓存对象，所以在"log2"后不会出现sql查询语句
+        */
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
+
         Session s = sf.openSession();
         s.beginTransaction();
-        //级联delete
-//        Category c = (Category) s.get(Category.class, 2);
-//        s.delete(c);
-
-        //级联update
-        Category c = (Category) s.get(Category.class, 3);
-        Product p1 = new Product();
-        p1.setName("product_501");
-        Product p2 = new Product();
-        p2.setName("product_502");
-        Product p3 = new Product();
-        p3.setName("product_503");
+        System.out.println("log1");
+        Category c1 = (Category)s.get(Category.class, 1);
+        System.out.println("log2");
+        Category c2= (Category)s.get(Category.class, 1);
+        System.out.println("log3");
 
         s.getTransaction().commit();
         s.close();
