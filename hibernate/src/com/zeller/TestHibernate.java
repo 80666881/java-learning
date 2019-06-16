@@ -11,51 +11,33 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class TestHibernate {
+    /*
+    *   Hibernate使用Criteria 来进行分页查询
+        c.setFirstResult(2); 表示从第3条数据开始
+        c.setMaxResults(5); 表示一共查询5条数据
+    *
+    * */
     public static void main(String[] args) {
-
-        /*
-        * hibernate一级缓存
-        * hibernate默认是开启一级缓存的，一级缓存存放在session上
-        *
-        * */
-
-
-        /*
-        * 第一次通过id=1获取对象的时候，session中是没有对应缓存对象的，所以会在"log1"后出现sql查询语句。
-          第二次通过id=1获取对象的时候，session中有对应的缓存对象，所以在"log2"后不会出现sql查询语句
-        */
-//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
-//
-//        Session s = sf.openSession();
-//        s.beginTransaction();
-//        System.out.println("log1");
-//        Category c1 = (Category)s.get(Category.class, 1);
-//        System.out.println("log2");
-//        Category c2= (Category)s.get(Category.class, 1);
-//        System.out.println("log3");
-//            s.getTransaction().commit();
-//            s.close();
-//            sf.close();
-
-        /*
-        * 二级缓存是在SessionFactory上
-        * */
-
-        //需要开启懒加载才生效(暂不知原因)
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
 
         Session s = sf.openSession();
         s.beginTransaction();
-        Category p1 = (Category) s.get(Category.class, 1);
-        Category p2 = (Category) s.get(Category.class, 1);
+
+        String name = "iphone";
+
+        Criteria c= s.createCriteria(Product.class);
+        c.add(Restrictions.like("name", "%"+name+"%"));
+        c.setFirstResult(2);
+        c.setMaxResults(5);
+
+        List<Product> ps = c.list();
+        for (Product p : ps) {
+            System.out.println(p.getName());
+
+        }
+
         s.getTransaction().commit();
         s.close();
-        Session s2 = sf.openSession();
-        s2.beginTransaction();
-        Category p3 = (Category) s2.get(Category.class, 1);
-
-        s2.getTransaction().commit();
-        s2.close();
         sf.close();
 
     }
