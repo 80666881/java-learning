@@ -24,18 +24,38 @@ public class TestHibernate {
         * 第一次通过id=1获取对象的时候，session中是没有对应缓存对象的，所以会在"log1"后出现sql查询语句。
           第二次通过id=1获取对象的时候，session中有对应的缓存对象，所以在"log2"后不会出现sql查询语句
         */
+//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//
+//        Session s = sf.openSession();
+//        s.beginTransaction();
+//        System.out.println("log1");
+//        Category c1 = (Category)s.get(Category.class, 1);
+//        System.out.println("log2");
+//        Category c2= (Category)s.get(Category.class, 1);
+//        System.out.println("log3");
+//            s.getTransaction().commit();
+//            s.close();
+//            sf.close();
+
+        /*
+        * 二级缓存是在SessionFactory上
+        * */
+
+        //需要开启懒加载才生效(暂不知原因)
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
 
         Session s = sf.openSession();
         s.beginTransaction();
-        System.out.println("log1");
-        Category c1 = (Category)s.get(Category.class, 1);
-        System.out.println("log2");
-        Category c2= (Category)s.get(Category.class, 1);
-        System.out.println("log3");
-
+        Category p1 = (Category) s.get(Category.class, 1);
+        Category p2 = (Category) s.get(Category.class, 1);
         s.getTransaction().commit();
         s.close();
+        Session s2 = sf.openSession();
+        s2.beginTransaction();
+        Category p3 = (Category) s2.get(Category.class, 1);
+
+        s2.getTransaction().commit();
+        s2.close();
         sf.close();
 
     }
