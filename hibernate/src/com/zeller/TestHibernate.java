@@ -31,15 +31,10 @@ public class TestHibernate {
 
         String name = "iphone";
 
-        Query q =s.createQuery("from Product p where p.name like ?");
-
+        Query q =s.createQuery("select count(*) from Product p where p.name like ?");
         q.setString(0, "%"+name+"%");
-
-        Iterator<Product> it= q.iterate();
-        while(it.hasNext()){
-            Product p =it.next();
-            System.out.println(p.getName());
-        }
+        long total= (Long) q.uniqueResult();
+        System.out.println(total);
 
         s.getTransaction().commit();
         s.close();
