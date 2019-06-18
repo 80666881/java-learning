@@ -1,5 +1,6 @@
 package com.zeller;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -12,34 +13,37 @@ import org.hibernate.cfg.Configuration;
 
 public class TestHibernate {
     /*
-    *   Hibernate使用Criteria 来进行分页查询
-        c.setFirstResult(2); 表示从第3条数据开始
-        c.setMaxResults(5); 表示一共查询5条数据
+    *   Hibernate N+1
+    *   Hibernate有缓存机制，可以通过用id作为key把product对象保存在缓存中
+
+        同时hibernate也提供Query的查询方式。假设数据库中有100条记录，其中有30条记录在缓存中，但是使用Query的list方法，就会所有的100条数据都从数据库中查询，而无视这30条缓存中的记录
+
+        N+1是什么意思呢，首先执行一条sql语句，去查询这100条记录，但是，只返回这100条记录的ID
+        然后再根据id,进行进一步查询。
+
+        如果id在缓存中，就从缓存中获取product对象了，否则再从数据库中获取
     *
     * */
     public static void main(String[] args) {
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
-
         Session s = sf.openSession();
         s.beginTransaction();
 
         String name = "iphone";
 
-        Criteria c= s.createCriteria(Product.class);
-        c.add(Restrictions.like("name", "%"+name+"%"));
-        c.setFirstResult(2);
-        c.setMaxResults(5);
+        Query q =s.createQuery("from Product p where p.name like ?");
 
-        List<Product> ps = c.list();
-        for (Product p : ps) {
+        q.setString(0, "%"+name+"%");
+
+        Iterator<Product> it= q.iterate();
+        while(it.hasNext()){
+            Product p =it.next();
             System.out.println(p.getName());
-
         }
 
         s.getTransaction().commit();
         s.close();
         sf.close();
-
     }
 
 }
