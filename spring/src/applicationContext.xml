@@ -21,17 +21,25 @@
 
     <!--    声明业务对象-->
     <bean id="loggerAspect" class="com.zeller.aspect.LoggerAspect"/>
+    <bean id="dateAspect" class="com.zeller.aspect.DateAspect"/>
     <aop:config>
 
         <!--    pointcut声明日志切面-->
+        <!--   execution... 指定左边的辅助功能     -->
         <aop:pointcut id="loggerCutpoint"
                       expression=
-                              "execution(* com.zeller.service.ProductService.*(..)) "/>
-        <!--   execution... 指定左边的辅助功能     -->
+                              "execution(* com.zeller.service.ProductService.doSomeService(..)) "/>
+
+        <aop:pointcut id="dateCutpoint"
+                      expression=
+                              "execution(* com.zeller.service.ProductService.doSomeService2(..)) "/>
 
         <!--    aspect指定右边核心业务功能   -->
-        <aop:aspect id="logAspect" ref="loggerAspect">
+        <aop:aspect id="anyName1" ref="loggerAspect">
             <aop:around pointcut-ref="loggerCutpoint" method="log"/>
+        </aop:aspect>
+        <aop:aspect id="anyName2" ref="dateAspect">
+            <aop:around pointcut-ref="dateCutpoint" method="logDate"/>
         </aop:aspect>
     </aop:config>
 

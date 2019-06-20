@@ -19,5 +19,6 @@ public class TestSpring {
         * */
         ProductService s = (ProductService) context.getBean("s");
         s.doSomeService();
+        s.doSomeService2();
     }
 }
