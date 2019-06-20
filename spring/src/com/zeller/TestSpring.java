@@ -10,15 +10,8 @@ public class TestSpring {
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] { "applicationContext.xml" });
 
-//        Category c = (Category) context.getBean("c");
-//
-//        System.out.println(c.getCat());
-//        Product p = (Product) context.getBean("p");
-//        System.out.println(p.getName());
-//        System.out.println(p.getCategory().getCat());
-
-        ProductService s = (ProductService) context.getBean("s");
-        s.doSomeService();
-        s.doSomeService2();
+        Product p = (Product) context.getBean("p");
+        //通过注解方式注入对象
+        System.out.println(p.getCategory().getCat());
     }
 }

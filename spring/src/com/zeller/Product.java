@@ -4,12 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-@Component("p")
 public class Product {
     private int id;
     private String name = "product 123";
-    @Autowired
+
+    //可以通过@Autowired和@Resource，在变量声明处注入
+    //@Autowired
+    @Resource(name="c")
     private Category category;
+
     public int getId() {
         return id;
     }

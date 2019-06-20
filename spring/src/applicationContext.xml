@@ -13,13 +13,14 @@
    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:annotation-config/>
     <bean name="c" class="com.zeller.Category">
         <property name="cat" value="yyy"/>
     </bean>
 
     <bean name="p" class="com.zeller.Product">
         <property name="name" value="product1"/>
-        <property name="category" ref="c"/>
+<!--        <property name="category" ref="c"/>-->
     </bean>
 
     <bean name="s" class="com.zeller.service.ProductService">
