@@ -15,4 +15,10 @@
 		</property>
 	</bean>
 	<bean id="indexController" class="controller.IndexController"></bean>
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--作用是把视图约定在 /WEB-INF/page/*.jsp 这个位置		-->
+		<property name="prefix" value="/WEB-INF/page/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 </beans>
