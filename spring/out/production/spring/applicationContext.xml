@@ -13,30 +13,10 @@
    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-    <context:annotation-config/>
-    <bean name="c" class="com.zeller.Category">
-        <property name="cat" value="yyy"/>
-    </bean>
-
-    <bean name="p" class="com.zeller.Product">
-        <property name="name" value="product1"/>
-<!--        <property name="category" ref="c"/>-->
-    </bean>
-
-    <bean name="s" class="com.zeller.service.ProductService">
-    </bean>
-
-    <bean id="loggerAspect" class="com.zeller.aspect.LoggerAspect"/>
-
-    <aop:config>
-        <aop:pointcut id="loggerCutpoint"
-                      expression=
-                              "execution(* com.zeller.service.ProductService.*(..)) "/>
-
-        <aop:aspect id="logAspect" ref="loggerAspect">
-            <aop:around pointcut-ref="loggerCutpoint" method="log"/>
-        </aop:aspect>
-    </aop:config>
+<!--    修改applicationContext.xml，什么都去掉，只新增：-->
+    <context:component-scan base-package="com.zeller"/>
+<!-- 其作用是告诉Spring，bean都放在com.how2java.pojo这个包下-->
+<!-- 为Product类加上@Component注解，即表明此类是bean   -->
 
 
 </beans>

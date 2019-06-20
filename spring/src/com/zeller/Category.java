@@ -2,7 +2,7 @@ package com.zeller;
 
 import org.springframework.stereotype.Component;
 
-//@Component("c")
+@Component("c")
 public class Category {
     public int getId() {
         return id;

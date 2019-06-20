@@ -10,8 +10,13 @@ public class TestSpring {
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] { "applicationContext.xml" });
 
+        /*
+        * 对Bean进行注解配置
+        * 1.修改applicationContext.xml
+        * 2.对bean类用@Component("")声明
+        * */
         Product p = (Product) context.getBean("p");
-        //通过注解方式注入对象
-        System.out.println(p.getCategory().getCat());
+        System.out.println(p.getName());
+//        System.out.println(p.getCategory());
     }
 }
