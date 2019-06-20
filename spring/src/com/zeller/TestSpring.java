@@ -11,12 +11,13 @@ public class TestSpring {
                 new String[] { "applicationContext.xml" });
 
         /*
-        * 对Bean进行注解配置
-        * 1.修改applicationContext.xml
-        * 2.对bean类用@Component("")声明
+        * AOP
+        *   面向切面编程
+        *   周边功能在Spring的面向切面编程AOP思想里，即被定义为切面
+            在面向切面编程AOP的思想里面，核心业务功能和切面功能分别独立进行开发
+            然后把切面功能和核心业务功能 "编织" 在一起，这就叫AOP
         * */
-        Product p = (Product) context.getBean("p");
-        System.out.println(p.getName());
-//        System.out.println(p.getCategory());
+        ProductService s = (ProductService) context.getBean("s");
+        s.doSomeService();
     }
 }
