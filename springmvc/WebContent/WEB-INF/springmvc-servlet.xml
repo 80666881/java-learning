@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<!--本文件名字与web.xml的<servlet-name>springmvc</servlet-name>的springmvc对应-->
+<beans>
+	<bean id="simpleUrlHandlerMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<!--
+				表示访问路径/index会交给id=indexController的bean处理
+				id=indexController的bean配置为类：IndexController
+				-->
+				<prop key="/index">indexController</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="indexController" class="controller.IndexController"></bean>
+</beans>
