@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ec7cac6-6bef-4bb2-a724-ccf3c072b7e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../springmvc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springmvc/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/struts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/struts.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_base/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/dao/HeroDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/dao/HeroDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -82,6 +84,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,7 +117,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,17 +302,17 @@
       <workItem from="1561080875973" duration="201000" />
       <workItem from="1561081269667" duration="778000" />
       <workItem from="1561256030742" duration="568000" />
+      <workItem from="1561558142924" duration="483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2972000" />
+    <option name="totallyTimeSpent" value="3455000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-215" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -362,7 +364,7 @@
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
