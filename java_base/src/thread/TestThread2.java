@@ -124,7 +124,7 @@ public class TestThread2 {
             public void run(){
 
                 while(!teemo.isDead()){
-                    gareen.attackHero2(teemo);
+                    gareen.attackHero(teemo);
                 }
             }
         };
@@ -132,7 +132,7 @@ public class TestThread2 {
         Thread t2= new Thread(){
             public void run(){
                 while(!leesin.isDead()){
-                    bh.attackHero2(leesin);
+                    bh.attackHero(leesin);
                 }
             }
         };
