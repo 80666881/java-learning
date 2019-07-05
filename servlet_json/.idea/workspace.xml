@@ -7,7 +7,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f77efb5-2f59-4dc4-a551-1bb5e4afbdc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../java_base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_base/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet_crud/.idea/artifacts/servlet_crud_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet_crud/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../servlet_crud/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.idea/artifacts/j2ee_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.idea/libraries/commons_fileupload_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/j2ee.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/UploadPhotoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/bean/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/dao/HeroDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/classes/servlet/HeroListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.16 .jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/uploaded/1469497056140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/uploaded/1469497144609.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/uploaded/1469497221859.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/artifacts/j2ee_war_exploded/uploaded/1506568576096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/UploadPhotoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/bean/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/dao/HeroDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/out/production/j2ee/servlet/HeroListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/src/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/src/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/UploadPhotoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/bean/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/src/bean/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/dao/HeroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/src/dao/HeroDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/src/servlet/HeroListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/src/servlet/HeroListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/UploadPhotoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/bean/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/bean/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/dao/HeroDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/dao/HeroDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/servlet/HeroListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/classes/servlet/HeroListServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/lib/commons-io-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/lib/mysql-connector-java-8.0.16 .jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet_crud/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/uploaded/1469497056140.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/uploaded/1469497144609.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/uploaded/1469497221859.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet_crud/web/uploaded/1506568576096.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +81,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SubmitServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="215">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Hero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -57,15 +122,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="26">
+              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/submit.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="43" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -97,8 +166,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-226" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -319,17 +390,19 @@
       <updated>1559969429525</updated>
       <workItem from="1559969431096" duration="1081000" />
       <workItem from="1562291200650" duration="185000" />
+      <workItem from="1562307676095" duration="71000" />
+      <workItem from="1562322411002" duration="304000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1266000" />
+    <option name="totallyTimeSpent" value="1641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19382322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -339,7 +412,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2911548" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29074445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,11 +453,15 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/submit.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SubmitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="215">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -392,10 +469,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="26">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
