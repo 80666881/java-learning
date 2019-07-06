@@ -25,9 +25,10 @@ public class AuthFilter implements Filter {
 			throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) res;
-
+		request.setCharacterEncoding("UTF-8");
 		String uri = request.getRequestURI();
 		if (uri.endsWith("login.html") || uri.endsWith("login")) {
+			System.out.println(System.getProperty("file.encoding"));
 			chain.doFilter(request, response);
 			return;
 		}

@@ -32,7 +32,7 @@ public class FirstFilter implements Filter {
 		Date d = new Date();
 		String date = sdf.format(d);
 
-		System.out.printf("%s %s ·ÃÎÊÁË %s%n", date, ip, url);
+		System.out.printf("%s %s è®¿é—®äº† %s%n", date, ip, url);
 		chain.doFilter(request, response);
 	}
 
