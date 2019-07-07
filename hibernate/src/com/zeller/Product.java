@@ -7,6 +7,16 @@ public class Product {
     Category category;
     Set<User> users;
 
+
+    //版本，用于乐观锁
+    int version;
+    public int getVersion() {
+        return version;
+    }
+    public void setVersion(int version) {
+        this.version = version;
+    }
+
     public Set<User> getUsers() {
         return users;
     }

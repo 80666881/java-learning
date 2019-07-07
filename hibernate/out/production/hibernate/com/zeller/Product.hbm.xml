@@ -13,6 +13,12 @@
             </generator>
         </id>
 
+
+        <!--乐观锁，version元素必须紧挨着id后面，Product.java要添加version属性  -->
+        <version name="version" column="ver" type="int"></version>
+
+
+
         <!--这里配置的时候，只写了属性name,没有通过column="name" 显式的指定字段，那么字段的名字也是name.-->
         <property name="name" />
         <property name="price" />
