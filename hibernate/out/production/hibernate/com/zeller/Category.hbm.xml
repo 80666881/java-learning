@@ -20,7 +20,7 @@
 -->
 
 <!--     cascade表示关联到产品这个属性时，如果执行删除操作，就进行级联-->
-        <set name="products" cascade="delete" lazy="true">
+        <set name="products" cascade="save-update" lazy="true">
             <key column="cid" not-null="false" />
             <one-to-many class="Product" />
         </set>

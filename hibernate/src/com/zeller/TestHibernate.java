@@ -25,12 +25,36 @@ import org.hibernate.cfg.Configuration;
 * */
 public class TestHibernate {
     public static void main(String[] args) {
+
+        //delete级联
+//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//        Session s = sf.openSession();
+//        s.beginTransaction();
+//        //删除Category的id为5的分类，并且删除关联的产品
+//        Category c = (Category) s.get(Category.class, 5);
+//        s.delete(c);
+//        s.getTransaction().commit();
+//        s.close();
+//        sf.close();
+
+
+        //save-update级联
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         Session s = sf.openSession();
         s.beginTransaction();
-        //删除Category的id为5的分类，并且删除关联的产品
-        Category c = (Category) s.get(Category.class, 5);
-        s.delete(c);
+        Category c = (Category) s.get(Category.class, 4);
+
+        Product p1 = new Product();
+        p1.setName("product_501");
+        Product p2 = new Product();
+        p2.setName("product_502");
+        Product p3 = new Product();
+        p3.setName("product_503");
+
+        c.getProducts().add(p1);
+        c.getProducts().add(p2);
+        c.getProducts().add(p3);
+
         s.getTransaction().commit();
         s.close();
         sf.close();
