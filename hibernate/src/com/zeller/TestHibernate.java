@@ -12,30 +12,74 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class TestHibernate {
-    /*
-    *   Hibernate N+1
-    *   Hibernate有缓存机制，可以通过用id作为key把product对象保存在缓存中
-
-        同时hibernate也提供Query的查询方式。假设数据库中有100条记录，其中有30条记录在缓存中，但是使用Query的list方法，就会所有的100条数据都从数据库中查询，而无视这30条缓存中的记录
-
-        N+1是什么意思呢，首先执行一条sql语句，去查询这100条记录，但是，只返回这100条记录的ID
-        然后再根据id,进行进一步查询。
-
-        如果id在缓存中，就从缓存中获取product对象了，否则再从数据库中获取
-    *
-    * */
     public static void main(String[] args) {
+
+
+        //多对一
+//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//
+//        Session s = sf.openSession();
+//        s.beginTransaction();
+//
+//        //这里更新Category表，id自增
+//        Category c =new Category();
+//        c.setName("c1");
+//        s.save(c);
+        //设置id=8的产品对应的cid为1
+        //category和product表的关联在Category的hbm里设置，表示cid即为product的外键，关联自己的主键
+//        Product p1 = (Product) s.get(Product.class, 8);
+//        p1.setCategory(c);
+//        s.update(p1);
+//
+//        //设置id=6的产品对应的cid为1
+//        Product p2 = (Product) s.get(Product.class, 6);
+//        p2.setCategory(c);
+//        s.update(p2);
+//
+//        s.getTransaction().commit();
+//        s.close();
+//        sf.close();
+
+
+
+        //一对多,打印cid=5的产品名称
+//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//
+//        Session s = sf.openSession();
+//        s.beginTransaction();
+//
+//        Category c = (Category) s.get(Category.class, 5);
+//        Set<Product> ps = c.getProducts();
+//        for (Product p : ps) {
+//            System.out.println(p.getName());
+//        }
+//
+//        s.getTransaction().commit();
+//        s.close();
+//        sf.close();
+
+
+
+        //多对多
+
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         Session s = sf.openSession();
         s.beginTransaction();
 
-        String name = "iphone";
+        //增加3个用户
+        Set<User> users = new HashSet();
+        for (int i = 0; i < 3; i++) {
+            User u =new User();
+            u.setName("user"+i);
+            users.add(u);
+            s.save(u);
+        }
 
-        Query q =s.createQuery("select count(*) from Product p where p.name like ?");
-        q.setString(0, "%"+name+"%");
-        long total= (Long) q.uniqueResult();
-        System.out.println(total);
+        //产品1被用户1,2,3购买（自增）
+        Product p1 = (Product) s.get(Product.class, 1);
 
+        p1.setUsers(users);
+        s.save(p1);
         s.getTransaction().commit();
         s.close();
         sf.close();

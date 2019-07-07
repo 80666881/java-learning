@@ -2,20 +2,31 @@
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
+<!--文件名 Product.hbm.xml P一定要大写，要和类保持一致-->
 <hibernate-mapping package="com.zeller">
+    <!--表示类Product对应表product_-->
     <class name="Product" table="product_">
+        <!-- 表示属性id,映射表里的字段id
+              <generator class="native"> 意味着id的自增长方式采用数据库的本地方式   -->
         <id name="id" column="id">
             <generator class="native">
             </generator>
         </id>
+
+        <!--这里配置的时候，只写了属性name,没有通过column="name" 显式的指定字段，那么字段的名字也是name.-->
         <property name="name" />
         <property name="price" />
+
+<!--    使用many-to-one 标签设置多对一关系
+        name="category" 对应Product类中的category属性
+        class="Category" 表示对应Category类
+        column="cid" 表示指向 category_表的外键-->
         <many-to-one name="category" class="Category" column="cid" />
         <set name="users" table="user_product" lazy="false">
             <key column="pid" />
             <many-to-many column="uid" class="User" />
         </set>
+
     </class>
 
 </hibernate-mapping>
