@@ -11,78 +11,30 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+/*
+    什么是级联？ 简单的说，没有配置级联的时候，删除分类，其对应的产品不会被删除。
+    但是如果配置了恰当的级联，那么删除分类的时候，其对应的产品都会被删除掉。
+
+*   包括上一步说的删除用得级联，级联有4种类型：
+    all：所有操作都执行级联操作；
+    none：所有操作都不执行级联操作；
+    delete：删除时执行级联操作；
+    save-update：保存和更新时执行级联操作；
+    级联通常用在one-many和many-to-many上，几乎不用在many-one上。
+*
+* */
 public class TestHibernate {
     public static void main(String[] args) {
-
-
-        //多对一
-//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
-//
-//        Session s = sf.openSession();
-//        s.beginTransaction();
-//
-//        //这里更新Category表，id自增
-//        Category c =new Category();
-//        c.setName("c1");
-//        s.save(c);
-        //设置id=8的产品对应的cid为1
-        //category和product表的关联在Category的hbm里设置，表示cid即为product的外键，关联自己的主键
-//        Product p1 = (Product) s.get(Product.class, 8);
-//        p1.setCategory(c);
-//        s.update(p1);
-//
-//        //设置id=6的产品对应的cid为1
-//        Product p2 = (Product) s.get(Product.class, 6);
-//        p2.setCategory(c);
-//        s.update(p2);
-//
-//        s.getTransaction().commit();
-//        s.close();
-//        sf.close();
-
-
-
-        //一对多,打印cid=5的产品名称
-//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
-//
-//        Session s = sf.openSession();
-//        s.beginTransaction();
-//
-//        Category c = (Category) s.get(Category.class, 5);
-//        Set<Product> ps = c.getProducts();
-//        for (Product p : ps) {
-//            System.out.println(p.getName());
-//        }
-//
-//        s.getTransaction().commit();
-//        s.close();
-//        sf.close();
-
-
-
-        //多对多
-
         SessionFactory sf = new Configuration().configure().buildSessionFactory();
         Session s = sf.openSession();
         s.beginTransaction();
-
-        //增加3个用户
-        Set<User> users = new HashSet();
-        for (int i = 0; i < 3; i++) {
-            User u =new User();
-            u.setName("user"+i);
-            users.add(u);
-            s.save(u);
-        }
-
-        //产品1被用户1,2,3购买（自增）
-        Product p1 = (Product) s.get(Product.class, 1);
-
-        p1.setUsers(users);
-        s.save(p1);
+        //删除Category的id为5的分类，并且删除关联的产品
+        Category c = (Category) s.get(Category.class, 5);
+        s.delete(c);
         s.getTransaction().commit();
         s.close();
         sf.close();
+
     }
 
 }
