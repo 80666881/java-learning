@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41fb8a36-604c-4a96-834e-e97bdcd77256" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hibernate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/how2java/test/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/how2java/test/TestSpring.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestSpring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="554">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,6 +74,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/com/how2java/test/TestSpring.java" />
       </list>
     </option>
   </component>
@@ -145,6 +146,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -196,12 +198,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562672109931</updated>
-      <workItem from="1562672111679" duration="818000" />
+      <workItem from="1562672111679" duration="1032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="818000" />
+    <option name="totallyTimeSpent" value="1032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-226" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -269,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/how2java/test/TestSpring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="554">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
