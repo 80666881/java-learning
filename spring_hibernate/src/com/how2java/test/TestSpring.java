@@ -33,12 +33,19 @@ public class TestSpring {
 
 
         //使用DetachedCriteria进行分页查询
-        DetachedCriteria dc = DetachedCriteria.forClass(Category.class);
-        int start =5;//从多少开始查询
-        int count =10;//每页显示数量
-        List<Category> cs= dao.findByCriteria(dc,start,count);
-        System.out.println(cs);
-        
+//        DetachedCriteria dc = DetachedCriteria.forClass(Category.class);
+//        int start =5;//从多少开始查询
+//        int count =10;//每页显示数量
+//        List<Category> cs= dao.findByCriteria(dc,start,count);
+//        System.out.println(cs);
+
+
+
+
+        //查询总数
+        List<Long> l =dao.find("select count(*) from Category c");
+        long total = l.get(0);
+        System.out.println(total);
         
 
     }
