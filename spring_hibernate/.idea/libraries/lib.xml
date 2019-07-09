@@ -3,7 +3,6 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/aopalliance-1.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.context.support-3.1.0.M2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.0.8-bin.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.oxm-3.1.0.M2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.test-3.1.0.M2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.core-3.1.0.M2.jar!/" />
@@ -36,6 +35,8 @@
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.web.servlet-3.1.0.M2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/org.springframework.expression-3.1.0.M2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.16 .jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
