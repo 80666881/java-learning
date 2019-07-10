@@ -10,7 +10,8 @@ import com.how2java.pojo.Product;
 public class ProductDAOImpl extends HibernateTemplate implements ProductDAO{
 	
 	public List<Product> list() {
-		return find("from Product");
+		String name = "c";
+		return find("from Product p where p.name LIKE '%"+name+"%'");
 	}
 
 	@Override
