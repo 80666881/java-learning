@@ -2,3 +2,4 @@
 	pageEncoding="UTF-8" isELIgnored="false"%>
 
 <h1>${message}</h1>
+<p>${date}</p>
