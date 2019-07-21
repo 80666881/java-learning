@@ -6,4 +6,5 @@ public interface ProductDAO {
 	
 	public List<Product> list();
 	public void add(Product p);
+	public void del(Product p);
 }

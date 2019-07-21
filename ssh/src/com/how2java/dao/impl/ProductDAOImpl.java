@@ -11,12 +11,16 @@ public class ProductDAOImpl extends HibernateTemplate implements ProductDAO{
 	
 	public List<Product> list() {
 		String name = "c";
-		return find("from Product p where p.name LIKE '%"+name+"%'");
+		return find("from Product");
 	}
 
 	@Override
 	public void add(Product p) {
 		save(p);
 	}
-	
+
+	@Override
+	public void del(Product p) {
+		delete(p);
+	}
 }

@@ -9,12 +9,25 @@ public class ProductAction {
 
 	ProductService productService;
 	List<Product> products;
-
+	Product product;
 	public String list() {
 		products = productService.list();
 		return "listJsp";
 	}
 
+	public String add(){
+		System.out.println("product.name:"+product.getName());
+		productService.add(product);
+		products = productService.list();
+		return "add";
+	}
+
+	public String del(){
+		System.out.println("product.id:"+product.getId());
+		productService.del(product);
+		products = productService.list();
+		return "del";
+	}
 
 	public ProductService getProductService() {
 		return productService;
@@ -32,4 +45,11 @@ public class ProductAction {
 		this.products = products;
 	}
 
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
 }

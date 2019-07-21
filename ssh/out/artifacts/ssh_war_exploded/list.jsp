@@ -17,8 +17,11 @@
 	<tr>
 		<td>${p.id}</td>
 		<td>${p.name}</td>
+		<td><a href="delProduct?product.id=${p.id}">删除</a></td>
 	</tr>
 </s:iterator>
+
+
 
 </table>
 

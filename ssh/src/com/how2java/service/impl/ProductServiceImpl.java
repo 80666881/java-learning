@@ -25,6 +25,17 @@ public class ProductServiceImpl implements ProductService {
 		return products;
 	}
 
+
+
+
+	public void add(Product p){
+		productDAO.add(p);
+	}
+
+	public void del(Product p){
+		productDAO.del(p);
+	}
+
 	public ProductDAO getProductDAO() {
 		return productDAO;
 	}
