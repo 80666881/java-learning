@@ -1,13 +1,13 @@
 package interceptor;
-import java.util.Date;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-public class IndexInterceptor extends HandlerInterceptorAdapter {
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
+
+public class IndexInterceptor3 extends HandlerInterceptorAdapter {
 
     /**
      * 在业务处理器处理请求之前被调用
@@ -22,10 +22,10 @@ public class IndexInterceptor extends HandlerInterceptorAdapter {
      */
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("prehandle1111");
-//        System.out.println("preHandle(), 在访问Controller之前被调用");
 
-        return true;
+        System.out.println("prehandle333");
+
+        return false;
 
     }
 
@@ -37,9 +37,8 @@ public class IndexInterceptor extends HandlerInterceptorAdapter {
     public void postHandle(HttpServletRequest request,
                            HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {
-        System.out.println("拦截器postHandle1111");
-//        System.out.println("postHandle(), 在访问Controller之后，访问视图之前被调用,这里可以注入一个时间到modelAndView中，用于后续视图显示");
-        modelAndView.addObject("date","由拦截器生成的时间:" + new Date());
+        System.out.println("拦截器postHandle3333");
+        modelAndView.addObject("date1","由拦截器生成的时间:" + new Date());
     }
 
     /**
@@ -51,7 +50,8 @@ public class IndexInterceptor extends HandlerInterceptorAdapter {
     public void afterCompletion(HttpServletRequest request,
                                 HttpServletResponse response, Object handler, Exception ex)
             throws Exception {
-        System.out.println("afterCompletion1111");
+        System.out.println("afterCompletion3333");
+
 //        System.out.println("afterCompletion(), 在访问视图之后被调用");
     }
 
