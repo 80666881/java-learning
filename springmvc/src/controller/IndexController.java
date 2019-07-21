@@ -18,4 +18,10 @@ public class IndexController {
 		mav.addObject("message", "Hello Spring MVC");
 		return mav;
 	}
+
+	@RequestMapping("/jump")
+	public ModelAndView jump() {
+		ModelAndView mav = new ModelAndView("redirect:/index");
+		return mav;
+	}
 }
