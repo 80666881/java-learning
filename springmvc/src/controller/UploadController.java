@@ -30,7 +30,9 @@ public class UploadController {
     public ModelAndView upload(HttpServletRequest request, UploadedImageFile file)
             throws IllegalStateException, IOException {
         String name = RandomStringUtils.randomAlphanumeric(10);
-        String newFileName = name + ".jpg";
+        String suffix = file.getSuffix();
+        String newFileName = name + suffix;
+        System.out.println(newFileName);
         File newFile = new File(request.getServletContext().getRealPath("/image"), newFileName);
         newFile.getParentFile().mkdirs();
         file.getImage().transferTo(newFile);
