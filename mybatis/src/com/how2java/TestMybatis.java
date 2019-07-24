@@ -2,8 +2,10 @@ package com.how2java;
  
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.List;
- 
+import java.util.Map;
+
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,11 +21,25 @@ public class TestMybatis {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session=sqlSessionFactory.openSession();
 
-        Category c = new Category();
-        c.setName("新增加的Category");
-        session.insert("addCategory",c);
+//        Category c = new Category();
+//        c.setName("新增加的Category");
+//        session.insert("addCategory",c);
+        //        listAll(session);
 
-        listAll(session);
+//        List<Category> cs = session.selectList("listCategoryByName","1");
+//        for (Category c : cs) {
+//            System.out.println(c.getName());
+//        }
+
+        Map<String,Object> params = new HashMap<>();
+        params.put("id", 2);
+        params.put("name", "at");
+
+        List<Category> cs = session.selectList("listCategoryByIdAndName",params);
+        for (Category c : cs) {
+            System.out.println(c.getName());
+        }
+
 
         session.commit();
         session.close();

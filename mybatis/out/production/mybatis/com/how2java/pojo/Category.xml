@@ -22,4 +22,12 @@
     <select id="listCategory" resultType="Category">
             select * from   category_
         </select>
+
+    <select id="listCategoryByName" parameterType="string" resultType="Category">
+            select * from   category_  where name like concat('%',#{0},'%')
+        </select>
+
+    <select id="listCategoryByIdAndName" parameterType="map" resultType="Category">
+    select * from   category_  where id> #{id}  and name like concat('%',#{name},'%')
+    </select>
 </mapper>
