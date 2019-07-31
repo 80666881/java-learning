@@ -23,12 +23,6 @@ import com.how2java.springboot.service.HeroService;
 public class HeroController {
 	@Autowired HeroService heroService;
 
-
-    @RequestMapping("/hello")
-    public String hello() {
-        return "Hello Spring Boot!";
-    }
-    
 	/*restful 部分*/
     @GetMapping("/heroes")
     public PageInfo<Hero> list(@RequestParam(value = "start", defaultValue = "1") int start,@RequestParam(value = "size", defaultValue = "5") int size) throws Exception {
