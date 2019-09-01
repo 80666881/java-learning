@@ -18,6 +18,6 @@
 
     <!-- 关联查询分类和产品表 -->
     <select id="listCategory" resultMap="categoryBean">
-            select c.*, p.*, c.id 'cid', p.id 'pid', c.name 'cname', p.name 'pname' from category_ c left join product_ p on c.id = p.cid
+            select  c.id as 'cid', p.id as 'pid', c.name as 'cname', p.name as 'pname' from category_ c left join product_ p on c.id = p.cid
         </select>
 </mapper>
