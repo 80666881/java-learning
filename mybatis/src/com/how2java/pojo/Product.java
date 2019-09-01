@@ -4,6 +4,17 @@ public class Product {
     private int id;
     private String name;
     private float price;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    private Category category;
+
     public int getId() {
         return id;
     }
